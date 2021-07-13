@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ECCUSBET_Web.Models.Calculations
 {
-    public class PneuCalculation : PneuEntitie
+    public class PneuCalculation : PneuEntity
     {
 
 

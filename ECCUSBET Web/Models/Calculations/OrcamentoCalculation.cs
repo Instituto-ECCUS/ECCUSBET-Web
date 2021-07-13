@@ -6,20 +6,18 @@ using System.Threading.Tasks;
 
 namespace ECCUSBET_Web.Models.Calculations
 {
-    public class OrcamentoCalculation : OrcamentoEntitie
+    public class OrcamentoCalculation
     {
-        public OrcamentoCalculation(string item, int unidade, float precoporUnidade, float precoTotal) : base(item, unidade, precoporUnidade, precoTotal)
+        public float ValorTotaldeCadaItem()
         {
+            var entity = new OrcamentoEntity();
+            return entity.Quantidade * entity.ValorUnitario;
         }
 
-        public float ValorTotal()
-        {
-            return Unidade * PrecoporUnidade;
-        }
-
-        public new List<float> CustoTotal() 
+        public List<float> CustoTotaldaBacia()
         {
             var lista = new List<float>();
+            lista.Add(ValorTotaldeCadaItem());
             return lista;
         }
     }

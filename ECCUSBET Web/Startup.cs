@@ -50,7 +50,7 @@ namespace ECCUSBET_Web
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Calculo}/{action=Dimensionamento}/{id?}");
             });
         }
     }

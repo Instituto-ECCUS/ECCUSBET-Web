@@ -1,5 +1,4 @@
 ﻿using API_ECCUSBET.Core.Entities;
-using API_ECCUSBET.Models.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,16 +6,55 @@ using System.Threading.Tasks;
 
 namespace ECCUSBET_Web.Models.Calculations
 {
-    public class BetCalculation : BetEntitie
+    public class BetCalculation : BetEntity
     {
-        public BetCalculation(double volUtio, double profundidadeM, OcupacaoEnum selecaoPadrao, double larguradaBet, double comprimentoBet) : base(volUtio, profundidadeM, selecaoPadrao, larguradaBet, comprimentoBet)
-        {
-        }
+        protected readonly int Npessoas, Intervalo;
+        protected readonly double Temperatura;
+        protected double ContrDiaruiaTotal, Pd;
+        protected readonly int CLodoFresco = 1;
+        protected int Ta, valorOpucacao;
 
-        public BetCalculation(int npessoas, int intervalo, double temperatura) : base(npessoas, intervalo, temperatura)
+        public BetCalculation(double volUtio, double profundidadeM, string tipodeOcupacao, double larguradaBet, double comprimentoBet) : base(volUtio, profundidadeM, tipodeOcupacao, larguradaBet, comprimentoBet)
         {
         }
-              
+             
+
+        /// <summary>
+        /// Método que retorna o valor de int segundo o tipo de ocupação posto pelo usuário
+        /// </summary>
+        /// <returns></returns>
+        private int RetornaValordoTipodeOcupacao()
+        {
+            if (TipodeOcupacao.Equals("Bares"))
+            {
+                return valorOpucacao = 6;
+            }
+            else if (TipodeOcupacao.Equals("Restaurantes e similares"))
+            {
+                return valorOpucacao = 25;
+            }
+            else if (TipodeOcupacao.Equals("Escolas"))
+            {
+                return valorOpucacao = 50;
+            }
+            else if (TipodeOcupacao.Equals("Edfícios públicos ou comercias"))
+            {
+                return valorOpucacao = 50;
+            }
+            else if (TipodeOcupacao.Equals("Alojamento provisório"))
+            {
+                return valorOpucacao = 80;
+            }
+            else if (TipodeOcupacao.Equals("Hotel exceto lavanderia e cozinha"))
+            {
+                return valorOpucacao = 100;
+            }
+            else if (TipodeOcupacao.Equals("Residência"))
+            {
+                return valorOpucacao = 36;
+            }
+            return valorOpucacao;
+        }
 
         /// <summary>
         /// Calcula o período de detenção, com base na contribuiçaõ diário total, "<see cref="ContrDiaruiaTotal"/>".
@@ -24,7 +62,7 @@ namespace ECCUSBET_Web.Models.Calculations
         /// <returns>Retorna o período de detenção</returns>
         private double PeriododeDetencao()
         {
-            ContrDiaruiaTotal = ((double)SelecaoPadrao * Npessoas);
+            ContrDiaruiaTotal = (RetornaValordoTipodeOcupacao() * Npessoas);
             if (ContrDiaruiaTotal <= 1500)
             {
                 Pd = 1;
@@ -184,7 +222,7 @@ namespace ECCUSBET_Web.Models.Calculations
         /// <returns>Dimensionamento "<see cref="VolUtio"/>"</returns>
         public double Dimensionamento()
         {
-            VolUtio = (1000 + Npessoas * (((double)SelecaoPadrao * PeriododeDetencao()) + (TaxadeAcumulacao() * CLodoFresco))) / 1000;
+            VolUtio = (1000 + Npessoas * ((RetornaValordoTipodeOcupacao() * PeriododeDetencao()) + (TaxadeAcumulacao() * CLodoFresco))) / 1000;
             return VolUtio;
         }
 
