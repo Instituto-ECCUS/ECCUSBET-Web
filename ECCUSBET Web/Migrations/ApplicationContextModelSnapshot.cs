@@ -56,8 +56,8 @@ namespace ECCUSBET_Web.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<double>("CustoTotal")
-                        .HasColumnType("float");
+                    b.Property<decimal>("CustoTotal")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Equipamento")
                         .IsRequired()
@@ -77,8 +77,8 @@ namespace ECCUSBET_Web.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("ValorUnitario")
-                        .HasColumnType("float");
+                    b.Property<decimal>("ValorUnitario")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("IdOrcamento");
 

@@ -2,7 +2,7 @@
 
 namespace ECCUSBET_Web.Migrations
 {
-    public partial class Inicial : Migration
+    public partial class inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -33,9 +33,9 @@ namespace ECCUSBET_Web.Migrations
                     Servico = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Equipamento = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Material = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ValorUnitario = table.Column<double>(type: "float", nullable: false),
+                    ValorUnitario = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Quantidade = table.Column<int>(type: "int", nullable: false),
-                    CustoTotal = table.Column<double>(type: "float", nullable: false),
+                    CustoTotal = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     IdDimensionamento = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

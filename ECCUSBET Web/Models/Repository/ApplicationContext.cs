@@ -25,9 +25,6 @@ namespace ECCUSBET_Web.Models.Repository
 
             //Definindo relacionamento
             modelBuilder.Entity<BetEntity>().HasOne(t => t.Orcamento);
-        
-                  
-          
         }
     }
 }

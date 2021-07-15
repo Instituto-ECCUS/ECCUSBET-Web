@@ -19,11 +19,11 @@ namespace ECCUSBET_Web.Models.Entities
         [Required]
         public string Material { get; protected set; }
         [Required]
-        public double ValorUnitario { get; protected set; }
+        public decimal ValorUnitario { get; protected set; }
         [Required]
         public int Quantidade { get; protected set; }
         [Required]
-        public double CustoTotal { get; protected set; }
+        public decimal CustoTotal { get; protected set; }
 
         //Relacionamento em que um BetEntity há um OrcamentoEntity, só basta definir que 1 BetEntity tem um Orcamento e definir aqui a chave estrangeira
         [ForeignKey("Dimensionamento")]
@@ -31,7 +31,7 @@ namespace ECCUSBET_Web.Models.Entities
         public virtual BetEntity Dimensionamento { get; private set; }
 
 
-        public OrcamentoEntity(string servico, string equipamento, string material, double valorUnitario, int quantidade, double custoTotal)
+        public OrcamentoEntity(string servico, string equipamento, string material, decimal valorUnitario, int quantidade, decimal custoTotal)
         {
             Servico = servico;
             Equipamento = equipamento;

@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ECCUSBET_Web.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20210715004752_Inicial")]
-    partial class Inicial
+    [Migration("20210715133132_inicial")]
+    partial class inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -58,8 +58,8 @@ namespace ECCUSBET_Web.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<double>("CustoTotal")
-                        .HasColumnType("float");
+                    b.Property<decimal>("CustoTotal")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Equipamento")
                         .IsRequired()
@@ -79,8 +79,8 @@ namespace ECCUSBET_Web.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("ValorUnitario")
-                        .HasColumnType("float");
+                    b.Property<decimal>("ValorUnitario")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("IdOrcamento");
 
