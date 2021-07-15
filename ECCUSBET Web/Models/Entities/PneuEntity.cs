@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace API_ECCUSBET.Core.Entities
 {
-    public class PneuEntity : BaseEntity
+    public class PneuEntity
     {
         public double DiametroPneu { get; protected set; }
         public double LarguraPneu { get; protected set; }
@@ -26,6 +26,10 @@ namespace API_ECCUSBET.Core.Entities
             LarguraPneu = larguraPneu * 0.001;
             Perfil = perfil / 100 * larguraPneu;
             N_Roda = n_Roda * 0.0254;
+        }
+
+        public PneuEntity()
+        {
         }
     }
 }

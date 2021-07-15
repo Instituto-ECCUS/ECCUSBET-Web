@@ -1,4 +1,5 @@
-﻿using ECCUSBET_Web.Models.Entities;
+﻿using API_ECCUSBET.Core.Entities;
+using ECCUSBET_Web.Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,17 +7,21 @@ using System.Threading.Tasks;
 
 namespace ECCUSBET_Web.Models.Calculations
 {
-    public class OrcamentoCalculation
+    public class OrcamentoCalculation : OrcamentoEntity
     {
-        public float ValorTotaldeCadaItem()
+        public OrcamentoCalculation(string servico, string equipamento, string material, double valorUnitario, int quantidade, double custoTotal) : base(servico, equipamento, material, valorUnitario, quantidade, custoTotal)
         {
-            var entity = new OrcamentoEntity();
-            return entity.Quantidade * entity.ValorUnitario;
         }
 
-        public List<float> CustoTotaldaBacia()
+        public double ValorTotaldeCadaItem()
         {
-            var lista = new List<float>();
+           
+            return Quantidade * ValorUnitario;
+        }
+
+        public List<double> CustoTotaldaBacia()
+        {
+            var lista = new List<double>();
             lista.Add(ValorTotaldeCadaItem());
             return lista;
         }
