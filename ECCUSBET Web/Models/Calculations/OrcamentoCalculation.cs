@@ -15,15 +15,12 @@ namespace ECCUSBET_Web.Models.Calculations
 
         public decimal ValorTotaldeCadaItem()
         {
-           
             return Quantidade * ValorUnitario;
         }
 
-        public List<decimal> CustoTotaldaBacia()
+        public decimal CustoTotaldaBacia()
         {
-            var lista = new List<decimal>();
-            lista.Add(ValorTotaldeCadaItem());
-            return lista;
+            return ValorTotaldeCadaItem() * 13;
         }
     }
 }

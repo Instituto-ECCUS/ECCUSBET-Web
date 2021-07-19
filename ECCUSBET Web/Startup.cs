@@ -61,7 +61,7 @@ namespace ECCUSBET_Web
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Calculo}/{action=Dimensionamento}/{id?}");
+                    pattern: "{controller=Home}/{action=BemVindo}/{id?}");
             });
 
             serviceProvider.GetService<IDataService>().InicializaDB(); // Garante a ctiação do banco quando a aplicação subir.

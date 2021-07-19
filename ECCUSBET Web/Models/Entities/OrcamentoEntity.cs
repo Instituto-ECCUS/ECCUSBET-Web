@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ECCUSBET_Web.Models.Entities
 {
-    [Table("Tabela de Orçamento")]
+   
     public class OrcamentoEntity
     {
         public int IdOrcamento { get; private set; }
@@ -25,10 +25,7 @@ namespace ECCUSBET_Web.Models.Entities
         [Required]
         public decimal CustoTotal { get; protected set; }
 
-        //Relacionamento em que um BetEntity há um OrcamentoEntity, só basta definir que 1 BetEntity tem um Orcamento e definir aqui a chave estrangeira
-        [ForeignKey("Dimensionamento")]
-        public int IdDimensionamento { get; private set; }
-        public virtual BetEntity Dimensionamento { get; private set; }
+   
 
 
         public OrcamentoEntity(string servico, string equipamento, string material, decimal valorUnitario, int quantidade, decimal custoTotal)

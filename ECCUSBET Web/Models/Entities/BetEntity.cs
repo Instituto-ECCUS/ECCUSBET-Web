@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace API_ECCUSBET.Core.Entities
 {
-    [Table("Tabela de Dimensionamento")]
+  
     public class BetEntity
     {
         public int IdDimensionamento { get; private set; }
@@ -23,9 +23,7 @@ namespace API_ECCUSBET.Core.Entities
         [Required]
         public double ComprimentoBet { get; protected set; }
 
-        public int IdOrcamento { get; private set; }
-
-        public virtual OrcamentoEntity Orcamento { get; private set; }
+      
 
         public BetEntity(double volUtio, double profundidadeM, string tipodeOcupacao, double larguradaBet, double comprimentoBet)
         {

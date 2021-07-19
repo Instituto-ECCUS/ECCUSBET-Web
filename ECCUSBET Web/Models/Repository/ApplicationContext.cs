@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace ECCUSBET_Web.Models.Repository
 {
     public class ApplicationContext : DbContext
@@ -20,11 +21,12 @@ namespace ECCUSBET_Web.Models.Repository
             base.OnModelCreating(modelBuilder);
 
             // Definição de PK
-            modelBuilder.Entity<BetEntity>().HasKey(t => t.IdDimensionamento);
-            modelBuilder.Entity<OrcamentoEntity>().HasKey(t => t.IdOrcamento);
+            modelBuilder.Entity<TbDimensionamento>().HasKey(t => t.Id);
+            modelBuilder.Entity<TbOrcamento>().HasKey(t => t.Id);
+            modelBuilder.Entity<TbCustoTotal>().HasKey(t => t.Id);
 
             //Definindo relacionamento
-            modelBuilder.Entity<BetEntity>().HasOne(t => t.Orcamento);
+            modelBuilder.Entity<TbDimensionamento>().HasOne(t => t.TbCustoTotal);
         }
     }
 }
