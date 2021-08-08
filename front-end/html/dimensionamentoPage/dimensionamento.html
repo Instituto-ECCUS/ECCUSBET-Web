@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dimensionamento.css">
+    <link rel="stylesheet" href="../../pageGeneralStyle.css">
+    <link rel="shortcut icon" href="../../images/" type="image/x-icon">
+    <link rel="shortcut icon" href="../../images/NicePng_tea-leaves-png_4506999 (1).png" type="image/x-icon">
+    <script src="dimensionamento.js" defer></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <title>ECCUSBET | Dimensionamento</title>
+</head>
+<body>
+    <header class="header-class" style="margin-bottom: 2%;">  
+
+
+        <nav class="nav-class">
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="../nos-ajude/nos-ajude.html">Nos ajude</a></li>  
+                <li><a href="../desenvolvimento/desenvolvimento.html">Desenvolvimento</a></li> 
+                <li><a href="../manual/manual.html">Manual</a></li> 
+                <li>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</li>
+            </ul>
+        </nav>
+
+        <div class="header-logo">
+            <img src="../../images/logo.PNG" alt="">
+        </div>
+
+   </header>
+
+
+   <header class="softwares-header">
+        <div class="softwares-header-nav">
+            <ul>
+                <li><a href="dimensionamento.html" id="dimensionamentoNav">Dimensionamento</a></li>
+                <li><a href="../analisePage/analise.html" id="analiseNav">Análise</a></li>
+            </ul>
+        </div>
+   </header>
+
+   <main class="main-class">
+        <div class="container-dimensionamento">
+            <div class="dados-de-entrada">
+                <h1>Dados de entrada</h1>
+        
+                <form action="">
+        
+                    <div class="padrao-de-ocupacao">
+                        <label for="">Padrão de ocupação</label>
+        
+                        <select name="" value="0" id="selecione-uma-opcao">
+                            <option disabled selected>Selecione uma opção</option>
+                            <option value="Residência">Residência</option>
+                            <option value="Hotel">Hotel &#40;exceto lavanderia e cozinha&#41;</option>
+                            <option value="Alojamento Provisório">Alojamento Provisório</option>
+                            <option value="Escola">Escolas</option>
+                        </select>
+                    </div>
+        
+        
+                    <div class="temperatura">
+                        <label for="" id="">Temperatura &#40;°C&#41;</label>
+                        <input type="number">
+                    </div>
+            
+                    <div class="intervalo-de-limpeza">
+                        <label for="" id="">Intervalo de limpeza &#40;1 - 5 anos&#41;</label>
+                        <input type="number" min="1" max="5">
+                    </div>
+                        
+                    <div class="numero-de-pessoas">
+                        <label for="" id="">Número de pessoas</label>
+                        <input type="number" min="0">
+                    </div>
+                        
+        
+                    <div class="tipo-de-pneu">
+                        <div class="tipo-de-pneuContainer">
+                            <label for="" class="">Tipo de pneu</label>
+                             <a href="../../images/Descricaopneu.jpg" target="_blank">
+                                <span class="tipo-de-pneu-span">
+                                    <img src="https://image.flaticon.com/icons/png/512/906/906794.png" alt="">
+                                </span>
+                            </a> 
+                        </div>
+                        
+                    
+                        
+                        <div class="inputs">
+                            P <input type="number"> / <input type="number">  R  <input type="number">
+                        </div>
+        
+        
+                    </div> 
+                        
+        
+                    <div class="button-form">
+                        <button type="submit">Calcular</button>
+                    </div> 
+                </form>
+        
+            </div>
+    
+    
+    
+        
+            <div class="dados-de-saida">
+        
+                <div class="resultado">
+                    <h1>Resultado</h1>
+                </div>
+                
+                <div class="container-form-dados-de-saida">
+                    <form action="" class="dados-de-saida-form">
+                        <section class="dados-de-saida-1">
+                                <div class="volume-do-pneu">
+                                    <label for="">Volume do pneu &#40;m³&#41;</label>
+                                    <br>
+                                    <input type="text" disabled>
+                                </div>
+        
+                                <div class="volume-util">
+                                    <label for="">Volume útil &#40;m³&#41;</label>
+                                    <br>
+                                    <input type="text" disabled>
+                                </div>
+                        
+                                <div class="largura">
+                                    <label for="">Largura &#40;m&#41;</label>
+                                    <br>
+                                    <input type="text" disabled>
+                                </div>
+        
+                                <div class="comprimento-da-bacia">
+                                    <label for="">Comprimento da bacia &#40;m&#41;</label>
+                                    <br>
+                                    <input type="text" disabled>
+                                </div>
+            
+                                <div class="profundidade">
+                                    <label for="">Profundidade &#40;m&#41;</label>
+                                    <br>
+                                    <input type="text" disabled>
+                                </div>
+            
+                                <div class="quantidade-de-pneus">
+                                    <label for="">Quantidade de pneus</label>
+                                    <br>
+                                    <input type="text" disabled>
+                                </div>
+                        </section>
+        
+                            
+                                
+                    </form>
+        
+                    <div class="dados-de-saida-images">
+                        <div class="dadosSaida-image1">
+                            <img src="../../images/Bet_Corte_TransverssalPNG.PNG" alt=""><br><span style="font-size: 9px;">João E. Filho &#40;2020&#41;</span>
+                        </div>
+                        <div class="dadosSaida-image2">
+                            <img src="../../images/Bet_Corte2.PNG" alt=""><br><span style="font-size: 9px;">João E. Filho &#40;2020&#41;</span>
+                        </div>
+                    </div> 
+        
+                </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

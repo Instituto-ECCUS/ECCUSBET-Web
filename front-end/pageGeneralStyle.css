@@ -1,0 +1,1463 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    overflow-X: hidden;
+}
+
+
+/* ============ HEADER GERAL ============ */
+.header-class {
+    width: 100%;
+    display: flex;
+}
+.header-logo {
+    flex: 0.12;
+}
+.header-logo img {
+    width: 80px;
+    margin-top: 2%;
+}
+
+.nav-class {
+    flex: 0.90;
+}
+
+.nav-class ul {
+    width: 62%;
+    margin-top: 1.5%;
+    text-align: center;
+}
+.nav-class li {
+    margin-left: 4%;
+    display: inline-block;
+}
+.nav-class a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand';
+    font-weight: 500;
+}
+.nav-class a:hover {
+    color: rgb(0, 145, 0);
+}
+
+
+
+
+
+
+
+
+
+.custos-dos-materias-empregados-na-bet {
+    width: 100%;
+    margin-top: 30%;
+    text-align: right;
+}
+.outputs-container {
+    width: 100%;
+}
+/* ===== BOX 1 ===== */
+.container-outputs-largura {
+    display: inline-block;
+    text-align: center;
+}
+.container-outputs-largura input {
+    width: 50%;
+}
+.container-outputs-largura label {
+    font-size: 14px;
+    width: 10%;
+}
+/* ===== BOX 2 ===== */
+.outputs-comprimento-da-bacia {
+    display: inline-block;
+    text-align: center;
+}
+.outputs-comprimento-da-bacia input {
+    width: 50%;
+}
+.outputs-comprimento-da-bacia label {
+    font-size: 14px;
+    width: 10%;
+}
+/* ===== BOX 3 ===== */
+.container-outputs-profundidade {
+    display: inline-block;
+    text-align: center;
+}
+
+.outputs-profundidade input {
+    width: 50%;
+}
+.outputs-profundidade label {
+    font-size: 14px;
+    width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================= SUB-HEADER DO DIMENSIONAMENTO E ANÁLISE =============================== */
+.softwares-header {
+    width: 90%;
+    margin: auto;
+    padding: 0.4% 0%;
+    border-radius: 15px 15px 0px 0px;
+    background-color: rgba(240, 240, 240, 0.795);
+}
+.softwares-header-nav {
+    
+}
+.softwares-header-nav ul {
+    width: 50%;
+    list-style: none;
+    margin-left: -1.8%;
+    
+}
+.softwares-header-nav li {
+    display: inline-block;
+    margin-left: 4%;
+}
+.softwares-header-nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: 'Raleway';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================= FOOTER ============================================ */
+.footer-class {
+    background: #091b27;
+    width: 100%;
+}
+.footer-class a:hover {
+    color: rgb(233, 233, 233);
+}
+
+
+
+
+
+
+/* ====================================== FOOTER LOGO =========================================== */
+.footer-logo {
+    width: 100%;
+    padding: 1% 0%;
+    filter: invert(100%);
+}
+.footer-logo img {
+    width: 6%;
+}
+.footer-logo-img {
+    text-align: center;
+}
+
+/* ===================================== FOOTER CONTENT ======================================= */
+.footer-content {
+    width: 80%;
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 6%;
+    margin: auto;
+    border-top: 1px solid rgba(92, 92, 92, 0.171);
+
+}
+.main-footer {
+    
+}
+
+/* =========== ABOUT US ============== */
+.footer-about-us {
+    flex: 1;
+}
+.about-us-tittle {
+    font-family: 'Raleway';
+}
+.about-us-tittle h1 {
+    color: white;
+    font-size: 38px;
+
+}
+.about-us-paragraph {
+    font-family: 'Assistant';
+    width: 76%;
+    padding: 3% 0%;
+    color: rgb(211, 211, 211);
+    font-size: 17px;
+}
+
+/* =============== LINKS ================= */
+.footer-links {
+    flex: 1;
+}
+.footer-links-tittle {
+    margin-left: 7%;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 14px;
+}
+.footer-links-list li {
+    margin-top: 3%;
+
+}
+.footer-links-list ul {
+    list-style: none;
+    padding-top: 1%;
+    text-align: left;
+}
+
+.footer-links-list a {
+    color: rgb(168, 168, 168);
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Raleway';
+}
+
+/* ============= CONTATO ================= */
+.footer-contact {
+    flex: 1;
+    padding-bottom: 2%;
+
+}
+.footer-contact-tittle {
+    color: white;
+    font-family: 'Raleway';
+    padding-bottom: 8%;
+    margin-left: 21%;
+    font-size: 14px;
+}
+/* ==== LOCALIZATION ===== */
+.footer-localization-flex {
+    display: flex;
+    
+}
+.footer-localization-flex img {
+    width: 20%;
+    margin-top: -3%;
+}
+
+#footerLocalizationTitle {
+    flex: 1;
+    margin-right: 40%;
+    color: white;
+    font-family: 'Raleway';
+}
+.footer-localization-img {
+    flex: 1;
+    position: relative;
+    left: 22%;
+}
+.footer-localization p {
+    text-align: center;
+    color: rgb(168, 168, 168);
+    font-family: 'Assistant';
+    position: relative;
+    left: -2%;
+}
+.footer-localization a {
+    color: rgb(168, 168, 168);
+    text-decoration: none;
+}
+/* ==== PHONE ===== */
+.footer-phone-flex {
+    display: flex;
+    margin-top: 6%;
+    
+}
+.footer-phone-flex img {
+    width: 20%;
+    margin-top: -3%;
+
+}
+
+#footerphoneTitle {
+    flex: 1;
+    margin-right: 40%;
+    color: white;
+    font-family: 'Raleway';
+}
+.footer-phone-img {
+    flex: 1;
+    position: relative;
+    left: 22%;
+}
+.footer-phone p {
+    text-align: center;
+    color: rgb(168, 168, 168);
+    font-family: 'Assistant';
+    position: relative;
+    left: -7%;
+}
+/* ==== EMAIL ===== */
+.footer-email-flex {
+    display: flex;
+    margin-top: 6%;
+}
+.footer-email-flex img {
+    width: 21%;
+    margin-top: -4%;
+
+}
+
+#footeremailTitle {
+    flex: 1;
+    margin-right: 40%;
+    color: white;
+    font-family: 'Raleway';
+}
+.footer-email-img {
+    flex: 1;
+    position: relative;
+    left: 22%;
+}
+.footer-email p {
+    text-align: center;
+    color: rgb(168, 168, 168);
+    font-family: 'Assistant';
+    position: relative;
+    left: 5%;
+}
+
+
+
+/* ==================================== FOOTER COPYRIGHT ======================================= */
+.footer-copyright {
+    background-color: #071721;
+    width: 100%;
+}
+.copyright-notes {
+    text-align: center;
+    font-family: 'Quicksand';
+    color: white;
+}
+.copyright-notes h5 {
+    font-weight: 200;
+    font-size: 14px;
+}
+.freepik-credits {
+    font-size: 14px;
+    font-weight: 200;
+}
+.freepik-credits a {
+    color: gray;
+    font-size: 14px;
+    font-weight: 200;
+    font-family: 'Quicksand';
+}
+
+.credits-link {
+    margin-top: 2%;
+}
+.footer-credits a {
+    color: rgb(168, 168, 168);
+}
+
+.footer-credits p {
+    color: white;
+    font-size: 12px;
+}
+.referencias {
+    width: 100%;
+    margin-top: 1%;
+}
+.referencias-manual {
+    width: 98%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================ MAIN ============================= */
+.main-content {
+    display: flex;
+    margin-top: 2%;
+}
+
+/* ===== IMAGEM SIDE ===== */
+.left-side {
+    flex: 1;
+    text-align: center;
+}
+.left-side img {
+    width: 94%;
+    padding: 12% 12%;
+}
+
+
+
+
+/* ===== TEXT SIDE ===== */
+.center-side {
+    flex: 1.6;
+    padding: 6% 0%;
+}
+
+.center-side h1 {
+    font-family: 'Raleway';
+    font-size: 52px;
+    width: 86%;
+    margin: auto;
+}
+
+.center-side-text {
+    text-align: center;
+}
+.center-side-text-references {
+    font-family: 'Raleway';
+}
+.center-side-text-references h4 {
+    font-size: 16px;
+
+}
+
+.center-side-autor {
+    font-size: 12px;
+    margin-top: 1.4%;
+
+}
+.center-side-orientador {
+    font-size: 12px;
+    margin-top: 1.4%;
+}
+.center-side-credits {
+    color: rgb(131, 131, 131);
+    font-family: 'Raleway';
+    width: 80%;
+    margin: auto;
+}
+.center-side-credits span {
+    font-size: 13px;
+    color: rgb(167, 167, 167);
+}
+
+/* ===== TABLE SIDE ===== */
+.right-side {
+    flex: 1;
+    padding-right: 3%;
+    text-align: center;
+    padding-top: 2%;
+}
+
+
+.right-side h3 {
+    text-align: center;
+    font-family: 'Quicksand';
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 4%;
+}
+
+.tabela-main-index {
+    margin: 0 auto;
+}
+
+.tabela-main-index th {
+    background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
+    padding: 10px;
+    font-family: 'Quicksand';
+    color: white;
+}
+
+.tabela-main-index td {
+    padding: 10px;
+    font-family: 'Quicksand';
+    background-color: rgb(190, 190, 190);
+}
+.minha-bet button {
+    background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
+    border-radius: 50px;
+    border: none;
+    color: white;
+    padding: 20px 35px;
+    font-family: 'Quicksand';
+    font-weight:700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================== DISPOSITIVOS MOBILE =========================== */
+
+
+/*============= MOBILE SMALL =============*/
+@media (min-width: 320px) and (max-width: 375px) {
+   
+/* =========================== GENERAL STYLES =========================== */
+    .header-class {
+        display: block;
+    }
+    
+    .logo {
+        display: none;
+    }
+    
+    .header-logo img {
+        display: none;
+    }
+    
+    .nav-class ul {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
+        padding: 2% 0;
+    }
+    
+    .nav-class li {
+        margin-left: 0%;
+        display: block;
+    }
+    .nav-class a {
+        font-size: 13.5px;
+        text-transform: uppercase;
+        color: white;
+    }
+    
+    .custos-dos-materias-empregados-na-bet {
+        display: none;
+    }
+
+    .footer-copyright {
+        padding: 0%;
+    }
+   
+    .footer-logo img {
+        width: 22%;
+    }
+   
+    .about-us-tittle h1 {
+        font-size: 20px;
+    }
+
+    .about-us-paragraph {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .footer-links {
+        display: none;
+    }
+
+    /* ==== LOCALIZATION ===== */
+    .footer-localization-flex img {
+        display: none;
+    }
+
+    #footerLocalizationTitle {
+        font-size: 12px;
+    }
+   
+    .footer-localization p {
+        left: 10%;
+        font-size: 12px;
+    }
+
+    /* ==== PHONE ===== */
+    .footer-phone-flex img {
+        display: none;
+    }
+
+    .footer-phone p {
+        left: -1%;
+        font-size: 12px;
+    }
+    /* ==== EMAIL ===== */
+    .footer-email-flex img {
+        display: none;
+    }
+
+    #footeremailTitle {
+        font-size: 12px;
+    }
+   
+    .footer-email p {
+        font-size: 10px;
+    }
+  
+    .copyright-notes h5 {
+        font-size: 12px;
+    }
+
+   
+    /* =========================== MAIN =========================== */
+    .main-content {
+        margin-top: 0%;
+        flex-direction: column;
+    }
+
+    .table-container {
+        width: 100%;
+    }
+
+    .left-side {
+        display: none;
+    }
+
+
+
+    /* ===== TEXT SIDE ===== */
+    .center-side h1 {
+        font-size: 20px;
+    }
+
+    .center-side-text-references h4 {
+        font-size: 14px;
+        padding-bottom: 2%;
+    }
+
+    .center-side-autor, .center-side-orientador {
+        display: none;
+    }
+
+    /* ===== TABLE SIDE ===== */
+    .right-side {
+        width: 100%;
+        padding: 0%;
+        margin: 0 auto;
+    }
+
+    .table-container {
+        width: 100%;
+    }
+
+    .tabela-main-index {
+        border-collapse: collapse;        
+    }
+
+    .tabela-main-index th {
+        font-size: 13px;
+        font-family: 'Quicksand';
+        padding: 4px;
+    }
+
+    .tabela-main-index td {
+        padding: 1px;
+        font-size: 13px;
+    }
+
+    .minha-bet button {
+        padding: 10px 25px;
+    }
+    .minha-bet {
+        margin-bottom: 5%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE MEDIUM */
+@media (min-width: 375px) and (max-width: 425px) {
+   /* =========================== GENERAL STYLES =========================== */
+    .header-class {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .header-logo img {
+        display: none;
+    }
+
+    .nav-class ul {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
+        padding: 2% 0;
+    }
+
+    .nav-class li {
+        margin-left: 0%;
+        display: block;
+    }
+    .nav-class a {
+        font-size: 13.5px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .custos-dos-materias-empregados-na-bet {
+        display: none;
+    }
+
+    .footer-copyright {
+        padding: 0%;
+    }
+
+    .footer-logo img {
+        width: 22%;
+    }
+
+    .about-us-tittle h1 {
+        font-size: 20px;
+    }
+
+    .about-us-paragraph {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .footer-links {
+        display: none;
+    }
+
+    /* ==== LOCALIZATION ===== */
+    .footer-localization-flex img {
+        display: none;
+    }
+
+    #footerLocalizationTitle {
+        font-size: 12px;
+    }
+
+    .footer-localization p {
+        left: 10%;
+        font-size: 12px;
+    }
+
+    /* ==== PHONE ===== */
+    .footer-phone-flex img {
+        display: none;
+    }
+
+    .footer-phone p {
+        left: -1%;
+        font-size: 12px;
+    }
+    /* ==== EMAIL ===== */
+    .footer-email-flex img {
+        display: none;
+    }
+
+    #footeremailTitle {
+        font-size: 12px;
+    }
+
+    .footer-email p {
+        font-size: 10px;
+    }
+
+    .copyright-notes h5 {
+        font-size: 12px;
+    }
+
+
+    /* =========================== MAIN =========================== */
+    .main-content {
+        margin-top: 0%;
+        flex-direction: column;
+    }
+
+    .table-container {
+        width: 100%;
+    }
+
+    .left-side {
+        display: none;
+    }
+
+
+
+    /* ===== TEXT SIDE ===== */
+    .center-side h1 {
+        font-size: 20px;
+    }
+
+    .center-side-text-references h4 {
+        font-size: 14px;
+        padding-bottom: 2%;
+    }
+
+    .center-side-autor, .center-side-orientador {
+        display: none;
+    }
+
+    /* ===== TABLE SIDE ===== */
+    .right-side {
+        width: 100%;
+        padding: 0%;
+        margin: 0 auto;
+    }
+
+    .table-container {
+        width: 100%;
+    }
+
+    .tabela-main-index {
+        border-collapse: collapse;        
+    }
+
+    .tabela-main-index th {
+        font-size: 13px;
+        font-family: 'Quicksand';
+        padding: 4px;
+    }
+
+    .tabela-main-index td {
+        padding: 1px;
+        font-size: 13px;
+    }
+
+    .minha-bet button {
+        padding: 10px 25px;
+    }
+    .minha-bet {
+        margin-bottom: 5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE TABLET */
+@media (min-width: 425px) and (max-width: 768px) {
+    
+    .header-class {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .header-logo img {
+        display: none;
+    }
+
+    .nav-class ul {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
+        padding: 2% 0;
+    }
+
+    .nav-class li {
+        margin-left: 0%;
+        display: block;
+    }
+    .nav-class a {
+        font-size: 13.5px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .custos-dos-materias-empregados-na-bet {
+        display: none;
+    }
+
+    .footer-copyright {
+        padding: 0%;
+    }
+
+    .footer-logo img {
+        width: 22%;
+    }
+
+    .about-us-tittle h1 {
+        font-size: 20px;
+    }
+
+    .about-us-paragraph {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .footer-links {
+        display: none;
+    }
+
+    /* ==== LOCALIZATION ===== */
+    .footer-localization-flex img {
+        display: none;
+    }
+
+    #footerLocalizationTitle {
+        font-size: 12px;
+    }
+
+    .footer-localization p {
+        left: 10%;
+        font-size: 12px;
+    }
+
+    /* ==== PHONE ===== */
+    .footer-phone-flex img {
+        display: none;
+    }
+
+    .footer-phone p {
+        left: -1%;
+        font-size: 12px;
+    }
+    /* ==== EMAIL ===== */
+    .footer-email-flex img {
+        display: none;
+    }
+
+    #footeremailTitle {
+        font-size: 12px;
+    }
+
+    .footer-email p {
+        font-size: 10px;
+    }
+
+    .copyright-notes h5 {
+        font-size: 12px;
+    }
+
+
+    /* =========================== MAIN =========================== */
+    .main-content {
+        margin-top: 0%;
+        flex-direction: column;
+    }
+
+    .table-container {
+        width: 100%;
+    }
+
+    .left-side {
+        display: none;
+    }
+
+
+
+    /* ===== TEXT SIDE ===== */
+    .center-side h1 {
+        font-size: 20px;
+    }
+
+    .center-side-text-references h4 {
+        font-size: 14px;
+        padding-bottom: 2%;
+    }
+
+    .center-side-autor, .center-side-orientador {
+        display: none;
+    }
+
+    /* ===== TABLE SIDE ===== */
+    .right-side {
+        width: 100%;
+        padding: 0%;
+        margin: 0 auto;
+    }
+
+    .table-container {
+        width: 100%;
+    }
+    .table-container table {
+        width: 90%;
+    }
+
+    .tabela-main-index {
+        border-collapse: collapse;   
+    }
+
+    .tabela-main-index th {
+        font-size: 14px;
+        font-family: 'Quicksand';
+        padding: 4px;
+    }
+
+    .tabela-main-index td {
+        padding: 5px;
+        font-size: 14.5px;
+    }
+
+    .minha-bet button {
+        padding: 12px 30px;
+    }
+    .minha-bet {
+        margin-bottom: 5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LAPTOP SMALL*/
+@media (min-width: 768px) and (max-width: 1024px) {
+   
+    /* ============ HEADER GERAL ============ */
+    .header-logo {
+        flex: 0.20;
+    }
+    .header-class {
+        text-align: center;
+    }
+    .nav-class {
+        flex: 0.80;
+    }
+    .nav-class ul {
+        width: 100%;
+        margin-top: 4%;
+        text-align: center;
+    }
+    .nav-class li {
+        font-size: 14.5px;
+    }
+    .custos-dos-materias-empregados-na-bet {
+       display: none;
+    }
+    
+    /* ============ FOOTER GERAL ============ */
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-links-list li {
+        text-align: center;
+    }
+
+    .footer-localization-flex img {
+        display: none;
+    }
+
+    /* ==== PHONE ===== */
+    .footer-phone-flex img {
+        display: none;
+    }
+
+    /* ==== EMAIL ===== */
+    .footer-email-flex img {
+        display: none;
+    }
+
+    .footer-copyright {
+        padding: 0%;
+    }
+
+    
+    /* ================================ MAIN ============================= */
+    /* ===== IMAGEM SIDE ===== */
+    .left-side {
+        display: none;
+    }
+
+    /* ===== TEXT SIDE ===== */
+    .center-side h1 {
+        font-size: 40px;
+        margin-top: 14%;
+    }
+
+    .center-side-text {
+        text-align: center;
+    }
+
+    /* ===== TABLE SIDE ===== */
+    .right-side {
+        padding-right: 4%;
+    }
+
+    .tabela-main-index th {
+        padding: 8px;
+    }
+
+    .tabela-main-index td {
+        padding: 8px;
+    }
+    .minha-bet {
+        padding-bottom: 10%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================== LAPTOP =========================== */
+@media (min-width: 1024px) and (max-width: 1300px) {
+    .header-logo {
+        flex: 0.20;
+    }
+    .header-class {
+        text-align: center;
+    }
+    .nav-class {
+        flex: 0.80;
+    }
+    .nav-class ul {
+        width: 100%;
+        margin-top: 4%;
+        text-align: center;
+    }
+    .nav-class li {
+        font-size: 14.5px;
+    }
+    .custos-dos-materias-empregados-na-bet {
+       display: none;
+    }
+    
+    /* ============ FOOTER GERAL ============ */
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-links-list li {
+        text-align: center;
+    }
+
+    .footer-localization-flex img {
+        display: none;
+    }
+
+    /* ==== PHONE ===== */
+    .footer-phone-flex img {
+        display: none;
+    }
+
+    /* ==== EMAIL ===== */
+    .footer-email-flex img {
+        display: none;
+    }
+
+    .footer-copyright {
+        padding: 0%;
+    }
+
+    
+    /* ================================ MAIN ============================= */
+    /* ===== IMAGEM SIDE ===== */
+    .left-side {
+        display: none;
+    }
+
+    /* ===== TEXT SIDE ===== */
+    .center-side h1 {
+        font-size: 40px;
+        margin-top: 14%;
+    }
+
+    .center-side-text {
+        text-align: center;
+    }
+
+    /* ===== TABLE SIDE ===== */
+    .right-side {
+        padding-right: 4%;
+    }
+
+    .tabela-main-index th {
+        padding: 8px;
+    }
+
+    .tabela-main-index td {
+        padding: 8px;
+    }
+    .minha-bet {
+        padding-bottom: 10%;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
