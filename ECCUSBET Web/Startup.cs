@@ -1,4 +1,3 @@
-using ECCUSBET_Web.Models.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,15 +25,6 @@ namespace ECCUSBET_Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
-            string connectionString = Configuration.GetConnectionString("Default");
-
-            services.AddDbContext<ApplicationContext>(options =>
-                options.UseSqlServer(connectionString)
-            );
-
-            services.AddTransient<IDataService, DataService>(); // Adicioona uma instancia transitória, O CLI instancia só enquantio usa.
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,7 +54,6 @@ namespace ECCUSBET_Web
                     pattern: "{controller=Home}/{action=BemVindo}/{id?}");
             });
 
-            serviceProvider.GetService<IDataService>().InicializaDB(); // Garante a ctiação do banco quando a aplicação subir.
         }
     }
 }
