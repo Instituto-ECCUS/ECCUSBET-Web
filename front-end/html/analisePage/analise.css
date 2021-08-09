@@ -1,0 +1,1204 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.main-class {
+    width: 100%;
+    display: flex;
+    margin-left: 5%;
+}
+
+label {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+
+/* ============== ANALISE CONTAINER LEFT ============== */
+.analise-container-left {
+    width: 29.2%;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 15px 0px ;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0px 0px 0px 15px ;
+
+}
+.analise-container-left h1 {
+    text-align: center;
+    padding: 4%;
+    font-family: 'Quicksand';
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.orcamento-elements {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ============ SERVIÇOS CONTAINER ============ */
+.servicos-div {
+    flex: 1;
+    text-align: center;
+    padding: 2%;
+}
+
+.servicos-div input {
+    width: 40%;
+    display: block;
+    margin: 1.5% auto;
+    border: 1px solid rgb(138, 138, 138);
+    padding: 4px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+
+/* ============ PREÇOS CONTAINER ============ */
+.unidades-div {
+    flex: 0;
+    text-align: center;
+    display: flex;
+    padding: 2%;
+}
+
+.unidades {
+    flex: 1;
+}
+
+.preco-unidades {
+    flex: 1;
+}
+
+.unidades-div input {
+    display: block;
+    margin: 1% auto;
+    width: 25%;
+    border: 1px solid rgb(138, 138, 138);
+    padding: 4px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+
+
+
+
+/* ============ PREÇO TOTAL ============ */
+.preco-total {
+    text-align: center;
+}
+.preco-total input {
+    width: 20%;
+    display: block;
+    margin: 1% auto;
+    font-family: 'Quicksand';
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding: 1%;
+    border-radius: 50px;
+    border: 1px solid rgb(138, 138, 138);
+}
+/* ======= BUTTON ======= */
+.analise-button {
+    text-align: center;
+    padding-top: 5%;
+}
+.analise-button input {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(90, 90, 90, 0.705);
+    padding: 10px 30px;
+    cursor: pointer;
+    font-family: 'Quicksand';
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 50px;
+    transition-duration: 0.5s;
+}
+.analise-button input:hover {
+    transform: translateY(5%);
+    transition-duration: 0.5s;
+}
+
+
+/* ======= IMG ======= */
+.analise-img {
+    width: 100%;
+    text-align: center;
+    padding-top: 9%;
+}
+.analise-img img {
+    width: 73%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ============== ANALISE CONTAINER RIGHT ============== */
+.analise-container-right {
+    width: 60.67%;
+    background-color: white;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0px 0px 15px 0px ;
+
+}
+
+
+
+
+/* ========= TABELA ORÇAMENTOS ========= */
+.tabela-orcamento-container {
+    width: 100%;
+}
+
+.tabela-orcamento-container h3 {
+    text-align: center;
+    font-family: 'Quicksand';
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 400;
+    padding-top: 2%;
+}
+
+.tabela-de-orcamento {
+    width: 60%;
+    height: 229px;
+    overflow-y: scroll;
+    margin: 0 auto;
+}
+
+.tabela-de-orcamento table {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Quicksand';
+    font-weight: 500;
+}
+  
+.tabela-de-orcamento td {
+    padding: 5px;
+    background-color: rgb(190, 190, 190);
+}
+
+.tabela-de-orcamento th {
+    background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
+    z-index: 2;
+    top: 0;
+    position: sticky;
+    padding: 10px;
+    color: white;
+}
+
+/* ==== TABELA DE ORÇAMENTOS BUTTONS ==== */
+.tabela-de-orcamento-buttons {
+    background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
+    width: 100%;
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    padding: 3px 0;
+}
+
+.orcamento-buttons {
+    flex: 0.57;
+    text-align: center;
+}
+.orcamento-buttons input {
+    background-color: rgb(236, 236, 236);
+    border: 1px solid rgb(90, 90, 90);
+    padding: 4px 20px;
+    text-align: center;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+/* ======== CUSTO TOTAL ORÇAMENTO DIV ======== */
+.custo-total-orcamento {
+    flex: 1;
+    text-align: center;
+}
+.custo-total-orcamento label {
+    font-size: 13px;
+}
+.custo-total-orcamento input {
+    width: 20%;
+    background-color: rgb(236, 236, 236);
+    border: 1px solid rgb(90, 90, 90);
+    margin-left: 2%;
+    cursor: pointer;
+    padding: 4px 20px;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    text-align: center;
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+/* ========= TABELA DIMENSIONAMENTO ========= */
+.tabela-de-dimensionamento-container {
+    width: 100%;
+    
+}
+
+.tabela-de-dimensionamento-container h3 {
+    text-align: center;
+    font-family: 'Quicksand';
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 28px;
+    padding-top: 7%;
+}
+
+
+.tabela-de-dimensionamento {
+    width: 60%;
+    height: 229px;
+    overflow-y: scroll;
+    margin: 0 auto;
+}
+
+.tabela-de-dimensionamento table {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Quicksand';
+    font-weight: 400;
+}
+  
+.tabela-de-dimensionamento td {
+    padding: 5px;
+    background-color: rgb(190, 190, 190);
+}
+
+.tabela-de-dimensionamento th {
+    background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
+    z-index: 2;
+    top: 0;
+    position: sticky;
+    padding: 10px;
+    color: white;
+}
+
+
+
+
+/* ==== TABELA DE ORÇAMENTOS BUTTON ==== */
+.tabela-de-dimensionamento-button {
+    width: 100%;
+    margin: 0 auto;
+    width: 60%;
+    background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
+    padding: 3px 0;
+}
+
+.dimensionamento-button input {
+    background-color: rgb(236, 236, 236);
+    border: 1px solid rgb(90, 90, 90);
+    padding: 4px 20px;
+    text-align: center;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+#analiseNav {
+    padding-top: 12%;
+    padding-bottom: 12.6%;
+    padding-left: 22%;
+    padding-right: 22%;
+    color: green;
+}
+#dimensionamentoNav {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SMARTPHONE SMALL */
+@media (min-width: 320px) and (max-width: 375px) {
+    .main-class {
+        display: flex;
+        margin-left: 0%;
+        flex-direction: column;
+    }
+    
+    label {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 14px;
+    }
+    
+    
+    
+    /* ============== ANALISE CONTAINER LEFT ============== */
+    .analise-container-left {
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0px;
+        backdrop-filter: none;
+        border-radius: 0px;
+    }
+    .analise-container-left h1 {
+        font-size: 23px;
+    }
+    
+    
+    /* ============ PREÇO TOTAL ============ */
+    .preco-total input {
+        width: 30%;
+    }
+
+    /* ======= BUTTON ======= */
+    .analise-button input {
+        padding: 5px 20px;
+        border: 1px solid rgb(90, 90, 90);
+    }
+   
+    .analise-img img {
+        width: 50%;
+    }
+    
+    
+    /* ============== ANALISE CONTAINER RIGHT ============== */
+    .analise-container-right {
+        width: 100%;
+        background-color: white;
+        box-shadow: none;
+        backdrop-filter: none;
+        border-radius: 0px;
+        margin-top: 5%;
+    
+    }
+    
+    
+    
+    /* ========= TABELA ORÇAMENTOS ========= */
+    .tabela-orcamento-container h3 {
+        font-size: 20px;
+        padding-bottom: 2%;
+        margin-top: 10%;
+
+    }
+    
+    .tabela-de-orcamento {
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgb(209, 209, 209);
+    }
+    
+    .tabela-de-orcamento table {
+        width: 100%;
+        font-size: 13px;
+    }
+      
+    .tabela-de-orcamento td {
+        padding: 0px;
+
+    }
+    
+    .tabela-de-orcamento th {
+        padding: 0px;
+    }
+    
+
+    /* ==== TABELA DE ORÇAMENTOS BUTTONS ==== */
+    .tabela-de-orcamento-buttons {
+        width: 100%;
+    }
+    
+    .orcamento-buttons {
+        flex: 1;
+    }
+   
+    /* ======== CUSTO TOTAL ORÇAMENTO DIV ======== */
+    .custo-total-orcamento {
+        flex: 1;
+        text-align: center;
+    }
+    .custo-total-orcamento label {
+        display: none;
+    }
+    .custo-total-orcamento input {
+        width: 50%;
+    }
+
+
+    /* ========= TABELA DIMENSIONAMENTO ========= */
+    .tabela-de-dimensionamento-container {
+        width: 100%;
+    }
+    
+    .tabela-de-dimensionamento-container h3 {
+        text-align: center;
+        font-family: 'Quicksand';
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-top: 10%;
+        padding-bottom: 2%;
+    }
+    
+    
+    .tabela-de-dimensionamento {
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgb(209, 209, 209);
+    }
+    
+    .tabela-de-dimensionamento table {
+        width: 100%;
+        font-size: 13px;
+    }
+      
+    .tabela-de-dimensionamento td {
+        padding: 0px;
+
+    }
+    
+    .tabela-de-dimensionamento th {
+        padding: 0px;
+    }
+    
+    
+    
+    
+    /* ==== TABELA DE ORÇAMENTOS BUTTON ==== */
+    .tabela-de-dimensionamento-button {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        padding: 3px 0;
+    }
+    
+    .dimensionamento-button input {
+        background-color: rgb(236, 236, 236);
+        border: 1px solid rgb(90, 90, 90);
+        padding: 4px 20px;
+        text-align: center;
+        margin-left: 2%;
+        cursor: pointer;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SMARTPHONE MEDIUM */
+@media (min-width: 375px) and (max-width: 425px) {
+    .main-class {
+        display: flex;
+        margin-left: 0%;
+        flex-direction: column;
+    }
+    
+    label {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 14px;
+    }
+    
+    
+    
+    /* ============== ANALISE CONTAINER LEFT ============== */
+    .analise-container-left {
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0px;
+        backdrop-filter: none;
+        border-radius: 0px;
+    }
+    .analise-container-left h1 {
+        font-size: 23px;
+    }
+    
+    
+    /* ============ PREÇO TOTAL ============ */
+    .preco-total input {
+        width: 30%;
+    }
+
+    /* ======= BUTTON ======= */
+    .analise-button input {
+        padding: 5px 20px;
+        border: 1px solid rgb(90, 90, 90);
+    }
+   
+    .analise-img img {
+        width: 50%;
+    }
+    
+    
+    
+    /* ============== ANALISE CONTAINER RIGHT ============== */
+    .analise-container-right {
+        width: 100%;
+        background-color: white;
+        box-shadow: none;
+        backdrop-filter: none;
+        border-radius: 0px;
+        margin-top: 5%;
+    
+    }
+    
+    
+    
+    /* ========= TABELA ORÇAMENTOS ========= */
+    .tabela-orcamento-container h3 {
+        font-size: 20px;
+        padding-bottom: 2%;
+        margin-top: 10%;
+
+    }
+    
+    .tabela-de-orcamento {
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgb(209, 209, 209);
+    }
+    
+    .tabela-de-orcamento table {
+        width: 100%;
+        font-size: 13px;
+    }
+      
+    .tabela-de-orcamento td {
+        padding: 0px;
+
+    }
+    
+    .tabela-de-orcamento th {
+        padding: 0px;
+    }
+    
+
+    /* ==== TABELA DE ORÇAMENTOS BUTTONS ==== */
+    .tabela-de-orcamento-buttons {
+        width: 100%;
+    }
+    
+    .orcamento-buttons {
+        flex: 1;
+    }
+   
+    /* ======== CUSTO TOTAL ORÇAMENTO DIV ======== */
+    .custo-total-orcamento {
+        flex: 1;
+        text-align: center;
+    }
+    .custo-total-orcamento label {
+        display: none;
+    }
+    .custo-total-orcamento input {
+        width: 50%;
+    }
+    
+
+
+
+    /* ========= TABELA DIMENSIONAMENTO ========= */
+    .tabela-de-dimensionamento-container {
+        width: 100%;
+    }
+    
+    .tabela-de-dimensionamento-container h3 {
+        text-align: center;
+        font-family: 'Quicksand';
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-top: 10%;
+        padding-bottom: 2%;
+    }
+    
+    
+    .tabela-de-dimensionamento {
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgb(209, 209, 209);
+    }
+    
+    .tabela-de-dimensionamento table {
+        width: 100%;
+        font-size: 13px;
+    }
+      
+    .tabela-de-dimensionamento td {
+        padding: 0px;
+
+    }
+    
+    .tabela-de-dimensionamento th {
+        padding: 0px;
+    }
+    
+    
+    
+    
+    /* ==== TABELA DE ORÇAMENTOS BUTTON ==== */
+    .tabela-de-dimensionamento-button {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        padding: 3px 0;
+    }
+    
+    .dimensionamento-button input {
+        background-color: rgb(236, 236, 236);
+        border: 1px solid rgb(90, 90, 90);
+        padding: 4px 20px;
+        text-align: center;
+        margin-left: 2%;
+        cursor: pointer;
+    }
+    
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SMARTPHONE LARGER / TABLET */
+@media (min-width: 425px) and (max-width: 768px) {
+
+    .main-class {
+        display: flex;
+        margin-left: 0%;
+        flex-direction: column;
+    }
+    
+    label {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 14px;
+    }
+    
+    
+    /* ============== ANALISE CONTAINER LEFT ============== */
+    .analise-container-left {
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0px;
+        backdrop-filter: none;
+        border-radius: 0px;
+    }
+    .analise-container-left h1 {
+        font-size: 23px;
+    }
+    
+    
+    /* ============ PREÇO TOTAL ============ */
+    .preco-total input {
+        width: 30%;
+    }
+
+    /* ======= BUTTON ======= */
+    .analise-button input {
+        padding: 5px 20px;
+        border: 1px solid rgb(90, 90, 90);
+    }
+   
+    .analise-img img {
+        width: 50%;
+    }
+    
+    
+
+    /* ============== ANALISE CONTAINER RIGHT ============== */
+    .analise-container-right {
+        width: 90%;
+        background-color: white;
+        box-shadow: none;
+        backdrop-filter: none;
+        border-radius: 0px;
+        margin: auto;
+    
+    }
+    
+    
+    
+    /* ========= TABELA ORÇAMENTOS ========= */
+    .tabela-orcamento-container h3 {
+        font-size: 22px;
+        padding-bottom: 2%;
+        margin-top: 10%;
+
+    }
+    
+    .tabela-de-orcamento {
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgb(209, 209, 209);
+    }
+    
+    .tabela-de-orcamento table {
+        width: 100%;
+        font-size: 13.5px;
+    }
+      
+    .tabela-de-orcamento td {
+        padding: 7px;
+
+    }
+    
+    .tabela-de-orcamento th {
+        padding: 10px;
+    }
+    
+
+    /* ==== TABELA DE ORÇAMENTOS BUTTONS ==== */
+    .tabela-de-orcamento-buttons {
+        width: 100%;
+    }
+    
+    .orcamento-buttons {
+        flex: 1;
+    }
+   
+    /* ======== CUSTO TOTAL ORÇAMENTO DIV ======== */
+    .custo-total-orcamento {
+        flex: 1;
+        text-align: center;
+    }
+    .custo-total-orcamento label {
+        display: none;
+    }
+    .custo-total-orcamento input {
+        width: 50%;
+    }
+    
+    
+      
+
+
+    /* ========= TABELA DIMENSIONAMENTO ========= */
+    .tabela-de-dimensionamento-container {
+        width: 100%;
+        padding-bottom: 10%;
+    }
+    
+    .tabela-de-dimensionamento-container h3 {
+        text-align: center;
+        font-family: 'Quicksand';
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 22px;
+        margin-top: 2%;
+        padding-bottom: 2%;
+    }
+    
+    
+    .tabela-de-dimensionamento {
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgb(209, 209, 209);
+    }
+    
+    .tabela-de-dimensionamento table {
+        width: 100%;
+        font-size: 13.5px;
+    }
+      
+    .tabela-de-dimensionamento td {
+        padding: 7px;
+
+    }
+    
+    .tabela-de-dimensionamento th {
+        padding: 10px;
+    }
+    
+    
+    
+    
+    /* ==== TABELA DE ORÇAMENTOS BUTTON ==== */
+    .tabela-de-dimensionamento-button {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        padding: 3px 0;
+    }
+    
+    .dimensionamento-button input {
+        background-color: rgb(236, 236, 236);
+        border: 1px solid rgb(90, 90, 90);
+        padding: 4px 20px;
+        text-align: center;
+        margin-left: 2%;
+        cursor: pointer;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LAPTOP SMALL */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-class {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* ============== ANALISE CONTAINER LEFT ============== */
+    .analise-container-left {
+        width: 50%;    
+        backdrop-filter: none;
+    }
+    .analise-container-left h1 {
+        padding-top: 5%;
+        font-size: 20px;
+    }
+    
+    .preco-total input {
+        width: 30%;
+    }
+    /* ======= BUTTON ======= */
+    .analise-button input {
+        padding: 7px 20px;
+    }
+
+    
+    
+    /* ======= IMG ======= */
+    .analise-img img {
+        width: 90%;
+    }
+    
+
+    /* ============== ANALISE CONTAINER RIGHT ============== */
+    .analise-container-right {
+        width: 50%;
+        backdrop-filter: none;
+    }
+
+    /* ========= TABELA ORÇAMENTOS ========= */
+    .tabela-orcamento-container h3 {
+        padding-top: 5%;
+        font-size: 20px;
+    }
+    
+    .tabela-de-orcamento {
+        width: 90%;
+    }
+    
+    .tabela-de-orcamento table {
+        font-size: 12.5px;
+    }
+      
+    .tabela-de-orcamento td, .tabela-de-orcamento th {
+        padding: 2px;
+    }
+    
+
+    /* ==== TABELA DE ORÇAMENTOS BUTTONS ==== */
+    .tabela-de-orcamento-buttons {
+        width: 90%;
+        display: block;
+    }
+    
+    /* ======== CUSTO TOTAL ORÇAMENTO DIV ======== */
+    .custo-total-orcamento {
+        padding-top: 2%;
+    }
+    .custo-total-orcamento label {
+        display: none;
+    }
+   
+
+    /* ========= TABELA DIMENSIONAMENTO ========= */
+    .tabela-de-dimensionamento-container {
+        width: 100%;
+        padding-bottom: 5%;
+
+    }
+    
+    .tabela-de-dimensionamento-container h3 {
+        padding-top: 5%;
+        font-size: 20px;
+    }
+    
+    
+    .tabela-de-dimensionamento {
+        width: 90%;
+    }
+    
+    .tabela-de-dimensionamento table {
+        font-size: 12.5px;
+    }
+      
+    .tabela-de-dimensionamento td {
+        padding: 2px;
+    }
+    
+    .tabela-de-dimensionamento th {
+        padding: 2px;
+    }
+    
+    
+    /* ==== TABELA DE ORÇAMENTOS BUTTON ==== */
+    .tabela-de-dimensionamento-button {
+        width: 90%;
+        display: block;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LAPTOP */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .analise-container-left {
+        width: 40%;
+        backdrop-filter: none;
+    }
+    .analise-container-left h1 {
+        padding-top: 5%;
+    }
+
+    .preço-total input {
+        width: 30%;
+    }
+    
+    /* ======= IMG ======= */
+    .analise-img img {
+        width: 70%;
+    }
+    
+    
+    
+    
+    
+
+    /* ============== ANALISE CONTAINER RIGHT ============== */
+    .analise-container-right {
+        width: 50%;
+    }
+    
+    
+    
+    
+    /* ========= TABELA ORÇAMENTOS ========= */
+    .tabela-orcamento-container {
+        width: 100%;
+    }
+    
+    .tabela-orcamento-container h3 {
+        font-size: 24px;
+        padding-top: 5%;
+    }
+    
+    .tabela-de-orcamento {
+        width: 90%;
+    }
+    
+    .tabela-de-orcamento table {
+        font-size: 14px;
+    }
+      
+    .tabela-de-orcamento td, .tabela-de-orcamento th {
+        padding: 2px;
+
+    }
+    
+   
+    
+    /* ==== TABELA DE ORÇAMENTOS BUTTONS ==== */
+    .tabela-de-orcamento-buttons {
+       width: 90%;
+    }
+    
+    .orcamento-buttons {
+        flex: 0.57;
+        text-align: center;
+    }
+    .orcamento-buttons input {
+        background-color: rgb(236, 236, 236);
+        border: 1px solid rgb(90, 90, 90);
+        padding: 4px 20px;
+        text-align: center;
+        margin-left: 2%;
+        cursor: pointer;
+    }
+    
+    /* ======== CUSTO TOTAL ORÇAMENTO DIV ======== */
+    .custo-total-orcamento {
+        flex: 1;
+        text-align: center;
+    }
+    .custo-total-orcamento label {
+        font-size: 13px;
+    }
+    .custo-total-orcamento input {
+        width: 20%;
+        background-color: rgb(236, 236, 236);
+        border: 1px solid rgb(90, 90, 90);
+        margin-left: 2%;
+        cursor: pointer;
+        padding: 4px 20px;
+        text-align: center;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* ========= TABELA DIMENSIONAMENTO ========= */
+    .tabela-de-dimensionamento-container {
+        width: 100%;
+        
+    }
+    
+    .tabela-de-dimensionamento-container h3 {
+        font-size: 24px;
+    }
+    
+    
+    .tabela-de-dimensionamento {
+        width: 90%;
+    }
+    
+    .tabela-de-dimensionamento table {
+        font-size: 14px;
+    }
+      
+    .tabela-de-dimensionamento td, .tabela-de-dimensionamento th {
+        padding: 7px;
+    }
+    
+
+    
+    
+    
+    
+    /* ==== TABELA DE ORÇAMENTOS BUTTON ==== */
+    .tabela-de-dimensionamento-button {
+        width: 90%;
+        padding: 3px 0;
+    }
+} 
