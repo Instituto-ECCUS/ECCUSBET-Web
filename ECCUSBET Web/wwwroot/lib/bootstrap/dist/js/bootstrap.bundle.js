@@ -2267,13 +2267,13 @@
   }
 
   /**
-   * Get the opposite placement of the given one
+   * Get the oppopageGeneralStyle placement of the given one
    * @method
    * @memberof Popper.Utils
    * @argument {String} placement
    * @returns {String} flipped placement
    */
-  function getOppositePlacement(placement) {
+  function getOppopageGeneralStylePlacement(placement) {
     var hash = { left: 'right', right: 'left', bottom: 'top', top: 'bottom' };
     return placement.replace(/left|right|bottom|top/g, function (matched) {
       return hash[matched];
@@ -2313,7 +2313,7 @@
     if (placement === secondarySide) {
       popperOffsets[secondarySide] = referenceOffsets[secondarySide] - popperRect[secondaryMeasurement];
     } else {
-      popperOffsets[secondarySide] = referenceOffsets[getOppositePlacement(secondarySide)];
+      popperOffsets[secondarySide] = referenceOffsets[getOppopageGeneralStylePlacement(secondarySide)];
     }
 
     return popperOffsets;
@@ -2968,13 +2968,13 @@
   }
 
   /**
-   * Get the opposite placement variation of the given one
+   * Get the oppopageGeneralStyle placement variation of the given one
    * @method
    * @memberof Popper.Utils
    * @argument {String} placement variation
    * @returns {String} flipped placement variation
    */
-  function getOppositeVariation(variation) {
+  function getOppopageGeneralStyleVariation(variation) {
     if (variation === 'end') {
       return 'start';
     } else if (variation === 'start') {
@@ -3064,14 +3064,14 @@
     var boundaries = getBoundaries(data.instance.popper, data.instance.reference, options.padding, options.boundariesElement, data.positionFixed);
 
     var placement = data.placement.split('-')[0];
-    var placementOpposite = getOppositePlacement(placement);
+    var placementOppopageGeneralStyle = getOppopageGeneralStylePlacement(placement);
     var variation = data.placement.split('-')[1] || '';
 
     var flipOrder = [];
 
     switch (options.behavior) {
       case BEHAVIORS.FLIP:
-        flipOrder = [placement, placementOpposite];
+        flipOrder = [placement, placementOppopageGeneralStyle];
         break;
       case BEHAVIORS.CLOCKWISE:
         flipOrder = clockwise(placement);
@@ -3089,7 +3089,7 @@
       }
 
       placement = data.placement.split('-')[0];
-      placementOpposite = getOppositePlacement(placement);
+      placementOppopageGeneralStyle = getOppopageGeneralStylePlacement(placement);
 
       var popperOffsets = data.offsets.popper;
       var refOffsets = data.offsets.reference;
@@ -3118,7 +3118,7 @@
         }
 
         if (flippedVariation) {
-          variation = getOppositeVariation(variation);
+          variation = getOppopageGeneralStyleVariation(variation);
         }
 
         data.placement = placement + (variation ? '-' + variation : '');
@@ -3498,7 +3498,7 @@
 
     popper[isHoriz ? 'left' : 'top'] = reference[basePlacement] - (subtractLength ? popper[isHoriz ? 'width' : 'height'] : 0);
 
-    data.placement = getOppositePlacement(placement);
+    data.placement = getOppopageGeneralStylePlacement(placement);
     data.offsets.popper = getClientRect(popper);
 
     return data;

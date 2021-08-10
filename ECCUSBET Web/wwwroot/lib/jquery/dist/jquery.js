@@ -2732,7 +2732,7 @@ function matcherFromGroupMatchers( elementMatchers, setMatchers ) {
 				}
 			}
 
-			// `i` is now the count of elements visited above, and adding it to `matchedCount`
+			// `i` is now the count of elements vipageGeneralStyled above, and adding it to `matchedCount`
 			// makes the latter nonnegative.
 			matchedCount += i;
 

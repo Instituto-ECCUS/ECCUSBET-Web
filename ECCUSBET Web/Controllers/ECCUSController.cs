@@ -1,5 +1,5 @@
-﻿using ECCUSBET_Web.Models.Calculations;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,13 +7,28 @@ using System.Threading.Tasks;
 
 namespace ECCUSBET_Web.Controllers
 {
-    public class CalculoController : Controller
+    public class ECCUSController : Controller
     {
+        private readonly IConfiguration configuracao;
+
+        public ECCUSController(IConfiguration config)
+        {
+            configuracao = config;
+        }
+
+        public IActionResult BenVindo()
+        {
+            var dev = configuracao["Desenvolvedor"];
+            var linkedin = configuracao["Linkedin"];
+            ViewData["Message"] = $"Desenvolvedor: {dev}, \n Linkedin: {linkedin}";
+            return View();
+        }
+
         /// <summary>
         /// Esse controlador gerencia os cálculos de dimansionamentos e orçamento.
         /// </summary>
         /// <returns></returns>
-        public IActionResult Dimensionamento()
+        public IActionResult Analise()
         {
             //var bet = new BetCalculation(ocupacao, npessoas, intervalo, temperatura);
             //var pneu = new TireCalculation(larguraPneu, perfil, aro);
@@ -29,12 +44,28 @@ namespace ECCUSBET_Web.Controllers
             return View();
         }
 
-        public IActionResult CalcularOrcamento()
+        public IActionResult Desenvolvimento()
         {
             //var orcamento = new OrcamentoCalculation();
             //orcamento.ValorTotal();
             //orcamento.CustoTotal();
             return View();
         }
+
+        public IActionResult Dimensionamento()
+        {
+            return View();
+        }
+
+        public IActionResult Manual()
+        {
+            return View();
+        }
+
+        public IActionResult NosAjude()
+        {
+            return View();
+        }
+
     }
 }
