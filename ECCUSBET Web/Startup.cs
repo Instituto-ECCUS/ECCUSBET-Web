@@ -52,7 +52,7 @@ namespace ECCUSBET_Web
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=ECCUS}/{action=Index}/{id?}");
+                    pattern: "{controller=ECCUS}/{action=BemVindo}/{id?}");
             });
         }
     }

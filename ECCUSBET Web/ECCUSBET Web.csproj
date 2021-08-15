@@ -12,12 +12,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\ECCUS\analise.cshtml" />
-    <None Include="Views\ECCUS\desenvolvimento.cshtml" />
-    <None Include="Views\ECCUS\dimensionamento.cshtml" />
-    <None Include="Views\ECCUS\manual.cshtml" />
-    <None Include="Views\ECCUS\nos_ajude.cshtml" />
-    <None Include="Views\ECCUS\Index.cshtml" />
+    <None Include="Views\ECCUS\Analise.cshtml" />
+    <None Include="Views\ECCUS\Desenvolvimento.cshtml" />
+    <None Include="Views\ECCUS\Dimensionamento.cshtml" />
+    <None Include="Views\ECCUS\Manual.cshtml" />
+    <None Include="Views\ECCUS\NosAjude.cshtml" />
+    <None Include="Views\ECCUS\BemVindo.cshtml" />
+    <None Include="wwwroot\css\analise.css" />
+    <None Include="wwwroot\css\desenvolvimento.css" />
+    <None Include="wwwroot\css\dimensionamento.css" />
+    <None Include="wwwroot\css\manual.css" />
+    <None Include="wwwroot\css\nos_ajude.css" />
     <None Include="wwwroot\css\pageGeneralStyle.css" />
     <None Include="wwwroot\images\1588945189931.jfif" />
     <None Include="wwwroot\images\3726696.jpg" />

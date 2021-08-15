@@ -16,7 +16,7 @@ namespace ECCUSBET_Web.Controllers
             configuracao = config;
         }
 
-        public IActionResult BenVindo()
+        public IActionResult BemVindo()
         {
             var dev = configuracao["Desenvolvedor"];
             var linkedin = configuracao["Linkedin"];
@@ -41,6 +41,7 @@ namespace ECCUSBET_Web.Controllers
             //bet.Largura_Bet(pneu.DiametroPneu);
             //pneu.QTE_Pneu(bet.VolUtio);
             //bet.ComprimentodaBaciat(pneu.QTEPneus, pneu.LarguraPneu);
+            
             return View();
         }
 
