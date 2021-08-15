@@ -9,13 +9,15 @@ body {
 }
 
 
+
 /* ============ HEADER GERAL ============ */
 .header-class {
     width: 100%;
     display: flex;
+    padding-bottom: 2%;
 }
 .header-logo {
-    flex: 0.12;
+    flex: 0;
 }
 .header-logo img {
     width: 80px;
@@ -393,9 +395,6 @@ body {
     font-family: 'Quicksand';
 }
 
-.credits-link {
-    margin-top: 2%;
-}
 .footer-credits a {
     color: rgb(168, 168, 168);
 }
@@ -406,7 +405,6 @@ body {
 }
 .referencias {
     width: 100%;
-    margin-top: 1%;
 }
 .referencias-manual {
     width: 98%;

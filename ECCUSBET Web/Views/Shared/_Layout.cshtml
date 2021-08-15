@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ECCUSBET Web</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/pageGeneralStyle.css" />
 </head>
 <body>
@@ -26,25 +25,20 @@
                         <li><a href="/ECCUS/Manual">Manual</a></li>
                     </ul>
                 </div>
-                <div class="header-logo">
-                    <img src="images/logo.PNG" alt="">
-                </div>
             </div>
         </nav>
     </header>
 
 
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="">
+        <main role="">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - ECCUSBET Web - <a asp-area="" asp-controller="ECCUS" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+
+
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
