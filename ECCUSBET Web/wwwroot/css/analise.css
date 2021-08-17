@@ -7,7 +7,7 @@
     width: 100%;
     display: flex;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 label {
@@ -201,17 +201,16 @@ label {
 }
 
 .tabela-de-orcamento th {
-    background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
     z-index: 2;
     top: 0;
     position: sticky;
     padding: 10px;
     color: white;
+
 }
 
 /* ==== TABELA DE ORÇAMENTOS BUTTONS ==== */
 .tabela-de-orcamento-buttons {
-    background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
     width: 100%;
     margin: 0 auto;
     width: 60%;
@@ -223,14 +222,15 @@ label {
     flex: 0.57;
     text-align: center;
 }
-.orcamento-buttons input {
-    background-color: rgb(236, 236, 236);
-    border: 1px solid rgb(90, 90, 90);
-    padding: 4px 20px;
-    text-align: center;
-    margin-left: 2%;
-    cursor: pointer;
-}
+    .orcamento-buttons input {
+        background-color: rgb(236, 236, 236);
+        padding: 4px 20px;
+        text-align: center;
+        margin-left: 2%;
+        cursor: pointer;
+        border-radius: 15px;
+        border: 1px solid rgb(138, 138, 138);
+    }
 
 /* ======== CUSTO TOTAL ORÇAMENTO DIV ======== */
 .custo-total-orcamento {
@@ -240,18 +240,19 @@ label {
 .custo-total-orcamento label {
     font-size: 13px;
 }
-.custo-total-orcamento input {
-    width: 20%;
-    background-color: rgb(236, 236, 236);
-    border: 1px solid rgb(90, 90, 90);
-    margin-left: 2%;
-    cursor: pointer;
-    padding: 4px 20px;
-    text-align: center;
-    font-family: 'Quicksand';
-    font-weight: 500;
-    text-align: center;
-}
+    .custo-total-orcamento input {
+        width: 20%;
+        background-color: rgb(236, 236, 236);
+        border: 1px solid rgb(90, 90, 90);
+        margin-left: 2%;
+        cursor: pointer;
+        padding: 4px 20px;
+        text-align: center;
+        font-family: 'Quicksand';
+        font-weight: 500;
+        text-align: center;
+        border: 1px solid rgb(138, 138, 138);
+    }
 
 
   
@@ -269,7 +270,6 @@ label {
 /* ========= TABELA DIMENSIONAMENTO ========= */
 .tabela-de-dimensionamento-container {
     width: 100%;
-    
 }
 
 .tabela-de-dimensionamento-container h3 {
@@ -279,6 +279,14 @@ label {
     text-transform: uppercase;
     font-size: 28px;
     padding-top: 7%;
+
+}
+.tabela-de-dimensionamento p {
+    color: black;
+    margin-bottom: 6%;
+    margin-top: 10px;
+    font-size: 13px;
+
 }
 
 
@@ -303,13 +311,20 @@ label {
 }
 
 .tabela-de-dimensionamento th {
-    background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
     z-index: 2;
     top: 0;
     position: sticky;
-    padding: 10px;
+    padding: 2px;
     color: white;
+    width: 20px;
 }
+
+.tabela-de-dimensionamento th input {
+        width: 60px;
+        border-radius: 15px;
+        padding: 2px;
+        border: 1px solid rgb(138, 138, 138);
+    }
 
 
 
@@ -319,17 +334,17 @@ label {
     width: 100%;
     margin: 0 auto;
     width: 60%;
-    background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
     padding: 3px 0;
 }
 
 .dimensionamento-button input {
     background-color: rgb(236, 236, 236);
-    border: 1px solid rgb(90, 90, 90);
     padding: 4px 20px;
     text-align: center;
     margin-left: 2%;
     cursor: pointer;
+    border: 1px solid rgb(138, 138, 138);
+    border-radius: 15px;
 }
 
 #analiseNav {
@@ -930,6 +945,10 @@ label {
 
 /* LAPTOP SMALL */
 @media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        overflow: auto;
+    }
+
     .main-class {
         width: 90%;
         margin: 0 auto;
@@ -1062,6 +1081,12 @@ label {
 
 /* LAPTOP */
 @media (min-width: 1024px) and (max-width: 1440px) {
+
+    body {
+        overflow: auto;
+        height: 125vh;
+    }
+
     .analise-container-left {
         width: 40%;
         backdrop-filter: none;
