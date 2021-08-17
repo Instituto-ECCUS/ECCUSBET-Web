@@ -159,8 +159,8 @@
     background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
     transform: scale(1.04);
     transition: 1s;
-    box-shadow: 10px 80px 10px 10px rgb(211, 211, 211);
-}
+    box-shadow: 10px 40px 10px 10px rgb(211, 211, 211);
+    }
 
 
 
@@ -191,7 +191,7 @@
     background: linear-gradient(0deg, rgb(255, 255, 255) 11%, rgb(255, 255, 255) 50%, rgb(241, 241, 241) 100%);
     transform: scale(1.04);
     transition: 1s;
-    box-shadow: 10px 80px 10px 10px rgb(211, 211, 211);
+    box-shadow: 10px 40px 10px 10px rgb(211, 211, 211);
 }
 .metodologia-text h2 {
     text-align: center;
@@ -217,7 +217,7 @@
     background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
     transform: scale(1.04);
     transition: 1s;
-    box-shadow: 10px 80px 10px 10px rgb(211, 211, 211);
+    box-shadow: 10px 40px 10px 10px rgb(211, 211, 211);
 }
 .analise-text h2 {
     text-align: center;
