@@ -479,8 +479,6 @@ body {
 /* ================================ MAIN ============================= */
 .main-content {
     display: flex;
-    margin-top: 2%;
-    padding-top: 2%;
 }
 
 /* ===== IMAGEM SIDE ===== */
@@ -584,9 +582,11 @@ body {
     font-weight: 700;
     margin-bottom: 20%; 
 }
-
-
-
+.minha-bet button:hover {
+    transform: translateY(5%);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
 
 
 
@@ -668,6 +668,62 @@ body {
         margin: 0 auto;
         background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
         padding: 2% 0;
+        background-color: lightblue;
+    }    
+    
+    .header-class {
+        display: block;
+        text-align: center;
+    }
+
+    .header-class {
+        display: block;
+        text-align: center;
+    }
+
+    .header-logo {
+        display: none;
+    }
+
+        .header-logo img {
+            display: none;
+        }
+
+    .nav-class {
+        padding: 0%;
+        text-align: center;
+    }
+
+        .nav-class ul {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
+            padding: 2% 0;
+            background-color: lightblue;
+        }
+
+    .header-logo {
+        display: none;
+    }
+
+    .header-logo img {
+        display: none;
+    }
+    .nav-class {
+        padding: 0%;
+        text-align: center;
+    }
+
+    .nav-class ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
+        padding: 2% 0;
+        background-color: lightblue;
     }
     
     .nav-class li {
@@ -677,7 +733,7 @@ body {
     .nav-class a {
         font-size: 13.5px;
         text-transform: uppercase;
-        color: white;
+        color: black;
     }
     
     .custos-dos-materias-empregados-na-bet {
@@ -842,23 +898,29 @@ body {
    /* =========================== GENERAL STYLES =========================== */
     .header-class {
         display: block;
+        text-align: center;
     }
 
-    .logo {
+    .header-logo {
         display: none;
     }
 
     .header-logo img {
         display: none;
     }
+    .nav-class {
+        padding: 0%;
+        text-align: center;
+    }
 
     .nav-class ul {
-        width:100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
         padding: 2% 0;
+        background-color: lightblue;
     }
 
     .nav-class li {
@@ -868,7 +930,7 @@ body {
     .nav-class a {
         font-size: 13.5px;
         text-transform: uppercase;
-        color: white;
+        color: black;
     }
 
     .custos-dos-materias-empregados-na-bet {
@@ -1073,7 +1135,33 @@ body {
     .nav-class a {
         font-size: 13.5px;
         text-transform: uppercase;
-        color: white;
+        color: black;
+    }
+        .header-class {
+        display: block;
+        text-align: center;
+    }
+
+    .header-logo {
+        display: none;
+    }
+
+    .header-logo img {
+        display: none;
+    }
+    .nav-class {
+        padding: 0%;
+        text-align: center;
+    }
+
+    .nav-class ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background: linear-gradient(0deg, rgb(15, 141, 10) 11%, rgb(51, 139, 29) 50%, rgb(42, 161, 29) 100%);
+        padding: 2% 0;
+        background-color: lightblue;
     }
 
     .custos-dos-materias-empregados-na-bet {
@@ -1249,6 +1337,11 @@ body {
     .header-logo {
         flex: 0.20;
     }
+    .header-logo img {
+        position: relative;
+        left: 10%;
+    }
+
     .header-class {
         text-align: center;
     }
@@ -1260,6 +1353,10 @@ body {
         margin-top: 4%;
         text-align: center;
     }
+    .nav-class a {
+        color: black;
+    }
+
     .nav-class li {
         font-size: 14.5px;
     }
@@ -1410,6 +1507,10 @@ body {
     .header-class {
         text-align: center;
     }
+    .header-logo img {
+        position: relative;
+        left: 10%;
+    }
     .nav-class {
         flex: 0.80;
     }
@@ -1423,6 +1524,9 @@ body {
     }
     .custos-dos-materias-empregados-na-bet {
        display: none;
+    }
+    .nav-class a {
+        color: black;
     }
     
     /* ============ FOOTER GERAL ============ */
