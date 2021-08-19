@@ -3,11 +3,13 @@
     margin: 0%;
 }
 
+
 .main-class {
     width: 100%;
     display: flex;
-    margin-left: 5%;
-    margin-top: 5%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 3%;
 }
 
 label {
@@ -137,10 +139,10 @@ label {
 .analise-img {
     width: 100%;
     text-align: center;
-    padding-top: 9%;
+    padding-top: 5%;
 }
 .analise-img img {
-    width: 73%;
+    width: 40%;
 }
 
 
@@ -197,7 +199,9 @@ label {
   
 .tabela-de-orcamento td {
     padding: 5px;
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(0, 145, 0);
+    color: white;
+
 }
 
 .tabela-de-orcamento th {
@@ -205,7 +209,7 @@ label {
     top: 0;
     position: sticky;
     padding: 10px;
-    color: white;
+    color: black;
 
 }
 
@@ -1084,7 +1088,7 @@ label {
 
     body {
         overflow: auto;
-        height: 125vh;
+        height: 120vh;
     }
 
     .analise-container-left {
@@ -1197,7 +1201,7 @@ label {
     /* ========= TABELA DIMENSIONAMENTO ========= */
     .tabela-de-dimensionamento-container {
         width: 100%;
-        
+        padding-bottom: 3%;
     }
     
     .tabela-de-dimensionamento-container h3 {
