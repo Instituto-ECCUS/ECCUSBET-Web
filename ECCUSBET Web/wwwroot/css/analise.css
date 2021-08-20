@@ -297,7 +297,6 @@ label {
 .tabela-de-dimensionamento {
     width: 60%;
     height: 229px;
-    overflow-y: scroll;
     margin: 0 auto;
 }
 
